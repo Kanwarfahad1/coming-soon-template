@@ -22,17 +22,20 @@ ul{
 
 .inner {
     margin: auto;
+    padding-top: 180px;
 }
 
 .inner h1 {
     color: #fff;
-    font-size: 9rem;
+    font-size: 8rem;
+    text-transform: uppercase;
 }
 
 .inner p {
     color: #fff;
     text-align: center;
     font-size: 2rem;
+    padding-top: 10px;
 }
 
 .main-wrapper:before {
@@ -49,4 +52,50 @@ ul{
     background: -moz-linear-gradient(bottom, #b224ef, #7579ff);
     background: linear-gradient(bottom, #b224ef, #7579ff);
     opacity: 0.8;
+}
+
+/* Timer CSS */
+.cell{
+    display:table;
+    margin: 0 auto;
+}
+
+.cntSeparator { display: none; }
+
+.cntDigit {
+    margin-top: 40px !important;
+}
+
+.cntDigit#cnt_2 { 
+    margin-left: 30px; 
+}
+
+.cntDigit#cnt_4 { 
+    margin-left: 30px; 
+}
+
+.cntDigit#cnt_6 { 
+    margin-left: 30px; 
+}
+
+/* Social Icons */
+
+.social-icons {
+    text-align: center;
+    margin: 40px 0px;
+}
+
+.social-icons ul li {
+    display: inline-block;
+    padding: 0px 20px;
+    transition:.8s;
+}
+
+.social-icons ul li:hover {
+    transform: rotate(360deg);
+}
+
+.social-icons ul li i {
+    color: #fff;
+    font-size: 30px;
 }
