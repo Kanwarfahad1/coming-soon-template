@@ -1,7 +1,7 @@
 html,body{
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 ul{
@@ -11,30 +11,33 @@ ul{
 }
 
 .main-wrapper{
-    background: url('../assets/images/background.jpg');
-    background-repeat: no-repeat;
+    background: url('../assets/images/background.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
-    height: 100vh;
-    display: flex;
+    height: auto;
+    min-height: 100vh;
     position: relative;
     z-index: 1;
 }
 
 .inner {
     margin: auto;
-    padding-top: 180px;
+    padding-top: 150px;   
 }
 
 .inner h1 {
     color: #fff;
-    font-size: 8rem;
+    font-size: 70px;
     text-transform: uppercase;
+    text-align: center;
 }
 
 .inner p {
     color: #fff;
     text-align: center;
-    font-size: 2rem;
+    font-size: 30px;
     padding-top: 10px;
 }
 
@@ -98,4 +101,53 @@ ul{
 .social-icons ul li i {
     color: #fff;
     font-size: 30px;
+}
+
+/* Responsive */
+
+@media screen and (max-width:767px){
+    .inner p{
+        font-size:23px;
+    }
+    div#cnt_0 {
+    margin-left: 30px;
+    }
+}
+
+@media screen and (max-width:480px){
+    .inner h1 {
+    font-size: 40px;
+    }
+    .inner p{
+        font-size:18px;
+    }
+    div#cnt_0 {
+    margin-left: 87px;
+    }
+    .cntDigit#cnt_4 {
+    margin-left: 87px;
+    }
+}
+
+@media screen and (max-width:412px){
+    
+    div#cnt_0 {
+    margin-left: 50px;
+    }
+    .cntDigit#cnt_4 {
+    margin-left: 50px;
+    }
+}
+
+@media screen and (max-width:360px){
+    .inner p{
+        font-size:14px;
+    }
+    div#cnt_0 {
+    margin-left: 30px;
+    }
+    .cntDigit#cnt_4 {
+    margin-left: 30px;
+    }
+    
 }
